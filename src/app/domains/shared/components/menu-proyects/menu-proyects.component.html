@@ -1,0 +1,12 @@
+<section class="">
+  <h3>Proyectos</h3>
+  <button (click)="openDialog()" class="flex items-center">
+    <span>create proyect</span>
+    <mat-icon fontIcon="add"></mat-icon>
+  </button>
+  <ul>
+    <li><a [routerLink]="['/project', 1]">Proyect 1</a></li>
+    <li><a [routerLink]="['/project', 2]">Proyect 2</a></li>
+    <li><a [routerLink]="['/project', 3]">Proyect 3</a></li>
+  </ul>
+</section>

@@ -1,0 +1,11 @@
+<main>
+  <h1>Proyects</h1>
+  <form>
+    <input type="text" placeholder="Searching">
+  </form>
+  <section class="flex justify-evenly">
+    @for (item of [1,2,3,4]; track $index) {
+      <app-proyect-card></app-proyect-card>
+    }
+  </section>
+</main>

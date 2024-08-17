@@ -1,0 +1,26 @@
+<header class="w-full flex justify-between">
+  <div class="flex items-center gap-5">
+    <div routerLink="/" class="cursor-pointer">LOGO</div>
+    <button [matMenuTriggerFor]="menuProyects" class="flex items-center">
+      Agyle Sync
+      <mat-icon fontIcon="arrow_drop_down"></mat-icon>
+    </button>
+  </div>
+  <mat-menu #menuProyects="matMenu">
+    <app-menu-proyects/>
+  </mat-menu>
+
+  <nav class="flex items-center gap-4">
+    <a href="new-things" class="underline">What's new</a>
+    <a href="help">Help</a>
+    <div class="flex items-center">
+      Agyle Sync
+      <button [matMenuTriggerFor]="Settings" class="flex items-center">
+        <mat-icon fontIcon="arrow_drop_down"></mat-icon>
+      </button>
+    </div>
+    <mat-menu #Settings="matMenu">
+      <app-menu-settings/>
+    </mat-menu>
+  </nav>
+</header>
